@@ -1,0 +1,527 @@
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px ;
+    text-decoration: none;
+}
+.navbar .nav-brand
+{
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+.navbar .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+}
+.navbar .nav-menu li a{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+.navbar .nav-button{
+    display: flex;
+    gap: 20px;
+
+}
+.navbar .nav-button a {
+    align-self: center;
+    font-size: 20px;
+    color: orange;
+}
+.navbar .nav-button .submit-btn
+{
+font-weight: 500;
+color: white;
+ background: #ff6b2d;
+ border: none;
+}
+.content
+{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+.sub-content{
+    max-width: fit-content;
+padding-left: 100px;
+margin-bottom: 20px;
+}
+.sub-content h2{
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 30px;
+
+}
+.sub-content h2 span{
+   
+    color: #ff6b2d;
+}
+.sub-content p{
+    margin-bottom: 30px;
+    font-size: 1rem;
+    color: black;
+     margin-bottom: 40px;
+}
+.sub-content .discover-btn{
+    background: transparent;
+    border: 2px solid orange;
+    color: #ff6b2d ;
+    padding: 10px 20px;
+}
+.sub-content .content-img
+{
+    text-align: center;
+    position: relative;
+    flex: 1 1 400px;
+
+}
+.sub-content img{
+    max-width: 100%;
+    border-radius: 10px;
+
+}
+.content-img{
+    width: 60% ;
+   position: relative;
+   border-radius: 5px;
+   padding: 10px;
+
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: whitesmoke;
+    padding: 20px 30px;
+    border-radius: 10px;
+    max-width: 900px;
+    width: 700px;
+    gap: 30px;
+    padding: 1 1 100px;
+}
+.location{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-end;
+    gap: 5px;
+}
+.location label{
+    font-size: 10px;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.location p{
+    font-size: 10px;
+    color: black;
+    margin: 0;
+}
+.explore-btn{
+    background: orange;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+.explore-btn:hover{
+    background: orange;
+}
+
+@media (max-width: 800px)
+{
+    .search-box{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:10px;    }
+        .explore-btn{
+            width: 100%;
+            text-align: center;
+        }
+}
+.section {
+    text-align: center;
+    padding: 60px 20px;
+}
+.section h2 {
+font-size: 2rem;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.section h2 span{
+    color: #ff6b2d;
+}
+.section p{
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card {
+    background:whitesmoke;
+    border-radius: 10px;
+    box-shadow: inset;
+    flex:  1 1 500px;
+    max-width: 250px;
+    padding: 20px 30px;
+    text-align: left;
+}
+
+.card h3{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.card p{
+    font-size: 1rem;
+    font-weight: 100;
+    margin-bottom: 800;
+}
+.deals
+{
+    text-align: center;
+    padding: 60px 20px;
+}
+.deals h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.deals h2 span{
+    color: #ff6b2d;
+}
+.deals p{
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+.deal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.deal-four{
+    background: whitesmoke;
+    border-radius: 10px;
+    flex: 1 1 300px;
+    max-width: 300px;
+    position: relative;
+}
+.deal-view{
+    text-align: left;
+    padding: 10px;
+}
+.deal-view h3{
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.rating{
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+.place{
+font-size: 0.8rem;
+color: gray;
+margin-bottom: 10px;
+}
+.price{
+font-size: 0.8rem;
+margin: auto;
+}
+.place .old{
+    text-decoration: line-through;
+    color: grey;
+    justify-content: right;
+    text-align-last: right;
+    padding-left: 180px;
+}
+.place .new{
+    color: orange;
+    font-weight: 300;
+    text-align-last: right;
+    
+}
+.btn-book{
+    background-color: #ff6b2d;
+    color: black;
+    border: 10px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 10px;
+    justify-content: center;
+}
+.vacation-plan
+{
+    text-align: center;
+    padding: 60px 20px;
+}
+.vacation-plan h2{
+text-align: center;
+font-weight: 500;
+font-size: 3rem;
+margin-bottom: 30px;
+}
+.vacation-plan span{
+color: #ff6b2d;
+}
+.vacation-plan p{
+    margin-bottom: 50px;
+    font-weight: 300;
+    color: grey;
+}
+.vacations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+   
+}
+.vacat {
+    background: whitesmoke;
+    flex: 1 1 200px;
+    position: relative;
+    max-width: 400px;
+border-radius: 10px;
+}
+.vacation{
+   
+    padding: 20px;
+}
+.vacation h3{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    text-align: right;
+}
+.rate{
+    color: orangered;
+    align-items: right;
+    text-align: right;
+}
+ .days{
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    text-align: left;
+     margin-bottom: 10px;
+}
+.days .star{
+    font-size: 0.8rem;
+    color: grey;
+    text-align: right;
+    justify-content: right;
+    margin-bottom: 10px;
+    padding-left: 240px;
+}
+.opinion{
+     text-align: center;
+    padding: 5px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+    margin-bottom: -200px;
+}
+.people h2{
+text-align: center;
+font-weight: 800;
+font-size: 3rem;
+margin-bottom: 10px;
+text-align: left;
+padding-left: 100px;
+}
+.people h2 span{
+color: #ff6b2d;
+}
+.people p{
+    font-size: 1rem;
+    font-weight: 300;
+    color: grey;
+    text-align: left;
+    padding-left: 100px;
+}
+.blogs{
+     text-align: center;
+    padding: 60px 20px;
+}
+.blogs h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.blogs h2 span{
+    color: orangered;
+}
+.blog{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+      
+}
+.blg{
+  background: whitesmoke;
+    flex: 1 1 200px;
+    position: relative;
+    max-width: 300px;
+    border-radius: 20px;
+}
+.blg-content{
+padding: 20px;
+
+}
+.blg-content h3{
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    justify-content: left;
+
+}
+.blg-content p{
+color: grey;
+justify-content: left;
+font-size: 0.9rem;
+font-weight: 200;
+text-align: left;
+}
+.subscribe
+{
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+    align-items: center;
+}
+.subscribe-division{
+    background: orangered;
+    color: white;
+    position: relative;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+}
+.subscribe-division h2{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+.subscribe-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.subscribe-form input{
+padding: 15px 50px;
+border: none;
+border-radius: 10px;
+outline: none;
+
+}
+.subscribe-form button{
+background: orange;
+border-radius: 10px;
+padding: 10px 20px;
+font-size: 1rem;
+  font-weight: 600;
+  outline: none;
+  border: none;
+}
+.footer{
+    padding: 50px 80px;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.footer-right{
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    display: flex;
+    gap: 50px;
+
+}
+.footer-right h3{
+    margin-bottom: 10px;
+    font-weight: 10px;
+}
+.footer-right ul{
+    padding: 0;
+    margin: 0;
+    list-style: 0;
+    line-height: 1;
+}
+.footer-right li{
+    margin-bottom: 10px;
+}
+.footer-right a{
+    text-decoration: none;
+    color: black;
+}
+.footer-bottom{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding-top: 10px;
+}
+.footer-bottom p{
+    text-decoration: none;
+    color: black;
+
+}
+.footer-bottom p span{
+    text-align: right;
+    justify-content: right;
+}
+.imag{
+   display: flex;
+   align-items: right;
+   justify-content: right;
+   border-radius: 50%;
+   
+}
+.back{
+    text-align: left;
+    justify-content: left;
+    padding-left: 100px;
+}
+.list{
+    list-style-type: none;
+}
